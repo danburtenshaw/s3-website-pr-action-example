@@ -27,7 +27,7 @@ jobs:
           yarn build
 
       - name: Deploy S3 Website
-        uses: danburtenshaw/s3-website-pr-action@v1
+        uses: danburtenshaw/s3-website-pr-action@v2
         with:
           bucket-prefix: "cra-example-app"
           folder-to-copy: "./build"
